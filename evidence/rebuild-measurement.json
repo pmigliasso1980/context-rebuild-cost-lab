@@ -1,0 +1,35 @@
+{
+  "method": "git archive HEAD into a new temporary directory; read context; create venv; run tests and CLI",
+  "python": "3.11.3",
+  "platform": "macOS-26.6-arm64-arm-64bit",
+  "elapsed_seconds": 3.0476,
+  "threshold_seconds": 180,
+  "within_threshold": true,
+  "result": "pass",
+  "steps": [
+    {
+      "name": "export committed HEAD",
+      "seconds": 0.022
+    },
+    {
+      "name": "extract clean checkout",
+      "seconds": 0.0034
+    },
+    {
+      "name": "read initialization context",
+      "seconds": 0.0002
+    },
+    {
+      "name": "create isolated environment",
+      "seconds": 2.8341
+    },
+    {
+      "name": "run test framework",
+      "seconds": 0.0487
+    },
+    {
+      "name": "run CLI smoke check",
+      "seconds": 0.031
+    }
+  ]
+}

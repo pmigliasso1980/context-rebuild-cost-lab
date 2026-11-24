@@ -13,7 +13,7 @@ Last updated: 2026-11-24
 - [x] CLI smoke check is documented and passing.
 - [x] Generated files and secrets are ignored.
 - [x] Rebuild measurement procedure is defined.
-- [ ] Fresh-checkout measurement recorded.
+- [x] Fresh-checkout measurement recorded (3.0476 seconds, pass).
 - [ ] Public GitHub remote published and verified.
 
 ## Ordered task breakdown
@@ -25,14 +25,15 @@ Last updated: 2026-11-24
 3. **Context** — document setup, readiness, constraints, decisions, and work
    order. Status: complete.
 4. **Measurement** — rebuild from a clean archive in an empty temporary
-   directory and record elapsed wall-clock time. Status: pending.
+   directory and record elapsed wall-clock time. Status: complete (3.0476 s).
 5. **Diagnosis** — if elapsed time exceeds 180 seconds, improve an
-   initialization artifact and rerun the same procedure. Status: pending.
+   initialization artifact and rerun the same procedure. Status: complete;
+   threshold was met, so no corrective adjustment was required.
 6. **Publication** — push the staged commit history to a public GitHub
    repository and verify file links. Status: pending.
 
 ## Current handoff
 
 Start at `AGENTS.md`. Do not infer task state from Git history alone; this file
-is the live handoff. The next action is task 4, measurement.
+is the live handoff. The next action is task 6, publication.
 
